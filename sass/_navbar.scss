@@ -1,0 +1,44 @@
+.logo {
+  width: 8.5rem;
+}
+
+header {
+  height: 7.2rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 5.4rem;
+
+  li, a {
+    list-style: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: bolder;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+
+  li button.btn {
+    font-size: 1.5rem !important;
+    width: 18rem;
+    height: 4rem;
+    border-radius: .8rem;
+    border: none;
+    background-color: #fdff00;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
