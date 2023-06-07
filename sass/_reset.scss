@@ -18,3 +18,19 @@ body {
   font-size: 1.6rem;
   font-family: 'Space Grotesk', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 1rem; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #383838; /* Cor do "polegar" da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #585858; /* Cor do "polegar" da barra de rolagem ao passar o mouse por cima */
+}
