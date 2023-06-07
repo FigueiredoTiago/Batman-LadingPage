@@ -295,6 +295,10 @@ body {
   line-height: 2.8rem;
   font-size: 1.8rem;
 }
+.info-left .text-about a {
+  color: #b2b2b2;
+  cursor: pointer;
+}
 
 .btn {
   width: 28.6rem;
@@ -314,12 +318,39 @@ body {
 header {
   height: 7.2rem;
 }
+header .menu {
+  display: none;
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  header .menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 760px) {
+  header .menu {
+    display: block;
+  }
+}
 
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100%;
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  .nav-bar {
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .nav-bar {
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .nav-links {
@@ -328,7 +359,8 @@ header {
   align-items: center;
   gap: 5.4rem;
 }
-.nav-links li, .nav-links a {
+.nav-links li,
+.nav-links a {
   list-style: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-weight: bolder;
@@ -347,6 +379,16 @@ header {
   background-color: #fdff00;
   font-weight: bolder;
   cursor: pointer;
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  .nav-links {
+    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  .nav-links {
+    display: none;
+  }
 }
 
 .card-container {

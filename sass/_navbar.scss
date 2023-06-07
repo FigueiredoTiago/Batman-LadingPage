@@ -4,22 +4,49 @@
 
 header {
   height: 7.2rem;
+
+  .menu {
+    display: none;
+  }
+
+  @include device("m") {
+    .menu {
+      display: block;
+    }
+  }
+  @include device("s") {
+    .menu {
+      display: block;
+    }
+  }
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   height: 100%;
+
+  @include device("m") {
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include device("s") {
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .nav-links {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   gap: 5.4rem;
 
-  li, a {
+  li,
+  a {
     list-style: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     font-weight: bolder;
@@ -35,10 +62,17 @@ header {
     font-size: 1.5rem !important;
     width: 18rem;
     height: 4rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     border: none;
     background-color: #fdff00;
     font-weight: bolder;
     cursor: pointer;
+  }
+
+  @include device("m") {
+    display: none;
+  }
+  @include device("s") {
+    display: none;
   }
 }
