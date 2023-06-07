@@ -400,7 +400,7 @@ header .menu {
   color: #fff;
   display: flex;
   max-width: 39.2rem;
-  height: 20rem;
+  max-height: 20rem;
   border-radius: 0.8rem;
   box-shadow: -3px 0px 13px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -3px 0px 13px 0px rgba(0, 0, 0, 0.75);
@@ -410,7 +410,7 @@ header .menu {
   height: 20rem;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-top-left-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
 }
