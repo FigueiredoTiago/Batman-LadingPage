@@ -258,6 +258,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  body {
+    background-image: url("../../assets/img/batmanbg-m.jpg");
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 760px) {
+  body {
+    background-image: url("../../assets/img/batmanbg-m.jpg");
+    background-position: center center;
+  }
+}
 
 .main-container {
   min-height: 100vh;
