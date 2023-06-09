@@ -509,31 +509,19 @@ header .menu {
 }
 
 footer {
-  height: 5rem;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 1rem;
-}
-footer .footer-info {
+  width: 100vw;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  gap: 1rem;
+}
+footer img {
+  width: 1.6rem;
+}
+footer p {
   color: grey;
-  word-wrap: break-word;
-}
-footer .footer-info img {
-  width: 100%;
-  max-width: 16px;
-  margin-right: 1rem;
-}
-footer .social-media img {
-  cursor: pointer;
-  margin-right: 1rem;
-  width: 100%;
-  max-width: 16px;
+  font-size: 1rem;
 }
 
 button.animation::before {

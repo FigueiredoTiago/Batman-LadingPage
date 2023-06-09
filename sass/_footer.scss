@@ -1,30 +1,17 @@
 footer {
-  height: 5rem;
-  background-color: black;
+  width: 100vw;
+  padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
 
-  .footer-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: grey;
-    word-wrap: break-word;
-
-    img {
-      width: 100%;
-      max-width: 16px;
-      margin-right: 1rem;
-    }
+  img {
+    width: 1.6rem;
   }
 
-  .social-media img {
-    cursor: pointer;
-    margin-right: 1rem;
-    width: 100%;
-    max-width: 16px;
+  p {
+    color: grey;
+    font-size: 1rem;
   }
 }
