@@ -2,15 +2,7 @@ body {
   background-image: url("../../assets/img/batmanbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
-  @include device('m') {
-    background-image: url("../../assets/img/batmanbg-m.jpg");
-    background-position: center center;
-  }
-  @include device('s') {
-    background-image: url("../../assets/img/batmanbg-m.jpg");
-    background-position: center center;
-  }
+  background-position: center center;
 }
 
 .main-container {
@@ -57,17 +49,18 @@ body {
       color: #b2b2b2;
       cursor: pointer;
     }
-
   }
-}
 
-.btn {
-  width: 28.6rem;
-  height: 5.6rem;
-  border-radius: 0.8rem;
-  border: none;
-  background-color: #fdff00;
-  font-weight: bolder;
-  font-size: 2.4rem;
-  cursor: pointer;
+   button {
+      width: 28.6rem;
+      height: 5.6rem;
+      border-radius: 0.8rem;
+      border: none;
+      background-color:#fdff00;
+      font-weight: bolder;
+      font-size: 2.4rem;
+      transition: 0.3s ease-in-out;
+      margin-top: 3rem;
+    }
+ 
 }

@@ -37,6 +37,18 @@ header {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  button {
+  width: 18rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #fdff00;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  cursor: pointer !important;
+  transition: 0.3s ease-in-out;
+}
 }
 
 .nav-links {

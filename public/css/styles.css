@@ -273,18 +273,7 @@ body {
   background-image: url("../../assets/img/batmanbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media screen and (min-width: 760px) and (max-width: 1200px) {
-  body {
-    background-image: url("../../assets/img/batmanbg-m.jpg");
-    background-position: center center;
-  }
-}
-@media screen and (max-width: 760px) {
-  body {
-    background-image: url("../../assets/img/batmanbg-m.jpg");
-    background-position: center center;
-  }
+  background-position: center center;
 }
 
 .main-container {
@@ -327,8 +316,7 @@ body {
   color: #b2b2b2;
   cursor: pointer;
 }
-
-.btn {
+.info-left button {
   width: 28.6rem;
   height: 5.6rem;
   border-radius: 0.8rem;
@@ -336,7 +324,8 @@ body {
   background-color: #fdff00;
   font-weight: bolder;
   font-size: 2.4rem;
-  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 3rem;
 }
 
 .logo {
@@ -379,6 +368,17 @@ header .menu {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+}
+.nav-bar button {
+  width: 18rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #fdff00;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  cursor: pointer !important;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-links {
@@ -493,7 +493,13 @@ header .menu {
 .card .info-card button {
   width: 10rem;
   height: 2.6rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #fdff00;
+  font-weight: bolder;
   font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer !important;
   margin-top: 2rem;
 }
 
@@ -512,4 +518,29 @@ footer .social-media img {
   cursor: pointer;
   margin-right: 1rem;
   width: 1.6rem;
+}
+
+button.animation::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #000000;
+  border-radius: 0.8rem;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+button.animation:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+button.animation:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }/*# sourceMappingURL=styles.css.map */

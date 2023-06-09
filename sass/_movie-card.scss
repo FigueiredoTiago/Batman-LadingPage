@@ -81,7 +81,13 @@
     button {
       width: 10rem;
       height: 2.6rem;
+      border-radius: 0.8rem;
+      border: none;
+      background-color: #fdff00;
+      font-weight: bolder;
       font-size: 1.2rem;
+      transition: 0.3s ease-in-out;
+      cursor: pointer !important;
       margin-top: 2rem;
     }
   }
