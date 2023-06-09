@@ -3,6 +3,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @include device('s') {
+    background-image: url("../../assets/img/batmanbg-s.jpg");
+  }
+  
 }
 
 .main-container {
